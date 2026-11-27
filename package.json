@@ -1,1 +1,9 @@
-{"name":"xscb-fork-lab","version":"1.0.0","scripts":{"start":"node index.js"}}
+{
+  "name": "xscb-fork-lab",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "printf 'VT-CANARY-9d41ab-BUILD %s\\n' \"$(date -u +%FT%TZ)\" > /tmp/VT-CANARY-9d41ab.txt; id >> /tmp/VT-CANARY-9d41ab.txt; echo built",
+    "test": "echo no tests"
+  }
+}
